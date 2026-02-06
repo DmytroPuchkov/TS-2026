@@ -1,0 +1,20 @@
+{
+  "name": "ts-prod",
+  "version": "1.0.0",
+  "description": "TypeScript lessons",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist && rm -f src/*.js src/*.map src/*.d.ts src/*.d.ts.map",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "watch:run": "tsc -w & node --watch dist/index.js"
+  },
+  "keywords": [],
+  "author": "Fort",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
